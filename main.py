@@ -16,7 +16,7 @@ st.write("Transform images into editable text with ease!!")
 def extract_text(image):
     with st.spinner('Extracting text...'):
         output_text = pytesseract.image_to_string(image)
-        time.sleep(1)  # simulate processing time
+        time.sleep(1)
     st.success('Done!')
     st.write("Extracted Text:")
     st.write(output_text)
